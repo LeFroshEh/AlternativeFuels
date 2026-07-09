@@ -10,8 +10,11 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.LeFroshEh.AlternativeFuels.item.ModItems;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.neoforge.client.model.DynamicFluidContainerModel;
 
 // This class is only loaded on the physical client.
 // You do not need to worry about it being called on a dedicated server.
@@ -20,6 +23,11 @@ public class ExampleModClient {
     public ExampleModClient(IEventBus modEventBus) {
         modEventBus.addListener(this::onClientSetup);
         modEventBus.addListener(this::registerClientExtensions);
+        modEventBus.addListener(this::registerItemColors);
+    }
+
+    private void registerItemColors(RegisterColorHandlersEvent.Item event) {
+        event.register(new DynamicFluidContainerModel.Colors(), ModItems.METHANOL_BUCKET.get());
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
