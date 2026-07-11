@@ -1,9 +1,9 @@
 {
   "fluid.alternativefuels.methanol": "Methanol",
-  "item.alternativefuels.methanol_bucket": "Methanol Eimer",
+  "item.alternativefuels.methanol_bucket": "Methanoleimer",
   "fluid.alternativefuels.wood_tar": "Holzteer",
-  "item.alternativefuels.wood_tar_bucket": "Holzteer Eimer",
+  "item.alternativefuels.wood_tar_bucket": "Holzteereimer",
   "fluid.alternativefuels.formaldehyde": "Formaldehyd",
-  "item.alternativefuels.formaldehyde_bucket": "Formaldehyd Eimer",
+  "item.alternativefuels.formaldehyde_bucket": "Formaldehydeimer",
   "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Treibstoffe"
 }
