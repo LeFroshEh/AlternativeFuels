@@ -1,0 +1,9 @@
+{
+  "fluid.alternativefuels.methanol": "甲醇",
+  "item.alternativefuels.methanol_bucket": "甲醇桶",
+  "fluid.alternativefuels.wood_tar": "木焦油",
+  "item.alternativefuels.wood_tar_bucket": "木焦油桶",
+  "fluid.alternativefuels.formaldehyde": "甲醛",
+  "item.alternativefuels.formaldehyde_bucket": "甲醛桶",
+  "creativetab.alternativefuels.alternative_fuels_tab": "替代燃料"
+}
