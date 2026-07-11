@@ -39,4 +39,16 @@ public class ModBlocks {
                             .liquid()
                             .sound(SoundType.EMPTY)
                             .noLootTable()));
+
+    public static final DeferredBlock<LiquidBlock> FORMALDEHYDE_BLOCK = BLOCKS.register("formaldehyde",
+            () -> new LiquidBlock(ModFluids.FORMALDEHYDE_SOURCE.get(),
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_LIGHT_BLUE)
+                            .replaceable()
+                            .noCollission()
+                            .strength(100.0F)
+                            .pushReaction(PushReaction.DESTROY)
+                            .liquid()
+                            .sound(SoundType.EMPTY)
+                            .noLootTable()));
 }

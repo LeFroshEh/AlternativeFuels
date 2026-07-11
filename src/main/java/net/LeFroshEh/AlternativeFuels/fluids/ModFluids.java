@@ -26,6 +26,12 @@ public class ModFluids {
     public static final DeferredHolder<Fluid, FlowingFluid> WOOD_TAR_FLOWING = FLUIDS.register("wood_tar_flowing",
             () -> new BaseFlowingFluid.Flowing(woodTarProperties()));
 
+    public static final DeferredHolder<Fluid, FlowingFluid> FORMALDEHYDE_SOURCE = FLUIDS.register("formaldehyde",
+            () -> new BaseFlowingFluid.Source(formaldehydeProperties()));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> FORMALDEHYDE_FLOWING = FLUIDS.register("formaldehyde_flowing",
+            () -> new BaseFlowingFluid.Flowing(formaldehydeProperties()));
+
     private static BaseFlowingFluid.Properties methanolProperties() {
         return new BaseFlowingFluid.Properties(
                 ModFluidTypes.METHANOL_TYPE,
@@ -46,5 +52,16 @@ public class ModFluids {
                 .levelDecreasePerBlock(2)
                 .block(() -> ModBlocks.WOOD_TAR_BLOCK.get())
                 .bucket(() -> ModItems.WOOD_TAR_BUCKET.get());
+    }
+
+    private static BaseFlowingFluid.Properties formaldehydeProperties() {
+        return new BaseFlowingFluid.Properties(
+                ModFluidTypes.FORMALDEHYDE_TYPE,
+                FORMALDEHYDE_SOURCE,
+                FORMALDEHYDE_FLOWING)
+                .slopeFindDistance(2)
+                .levelDecreasePerBlock(2)
+                .block(() -> ModBlocks.FORMALDEHYDE_BLOCK.get())
+                .bucket(() -> ModItems.FORMALDEHYDE_BUCKET.get());
     }
 }

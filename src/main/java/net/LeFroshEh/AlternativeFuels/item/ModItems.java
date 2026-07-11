@@ -24,4 +24,10 @@ public class ModItems {
                     new Item.Properties()
                             .craftRemainder(Items.BUCKET)
                             .stacksTo(1)));
+
+    public static final DeferredItem<BucketItem> FORMALDEHYDE_BUCKET = ITEMS.register("formaldehyde_bucket",
+            () -> new BucketItem(ModFluids.FORMALDEHYDE_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)));
 }

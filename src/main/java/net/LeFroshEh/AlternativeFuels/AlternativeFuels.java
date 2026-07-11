@@ -15,9 +15,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.minecraft.world.item.CreativeModeTabs;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(AlternativeFuels.MOD_ID)
@@ -36,9 +34,6 @@ public class AlternativeFuels {
         // Register ourselves for server and other game events we are interested in.
         NeoForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
-
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
@@ -47,18 +42,11 @@ public class AlternativeFuels {
         ModItems.ITEMS.register(modEventBus);
         ModFluidTypes.FLUID_TYPES.register(modEventBus);
         ModFluids.FLUIDS.register(modEventBus);
+        ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
         LOGGER.info("AlternativeFuels common setup complete");
-    }
-
-    // Add mod items to creative tabs
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.METHANOL_BUCKET);
-            event.accept(ModItems.WOOD_TAR_BUCKET);
-        }
     }
 
     @SubscribeEvent

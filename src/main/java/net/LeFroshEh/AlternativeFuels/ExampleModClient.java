@@ -29,6 +29,7 @@ public class ExampleModClient {
     private void registerItemColors(RegisterColorHandlersEvent.Item event) {
         event.register(new DynamicFluidContainerModel.Colors(), ModItems.METHANOL_BUCKET.get());
         event.register(new DynamicFluidContainerModel.Colors(), ModItems.WOOD_TAR_BUCKET.get());
+        event.register(new DynamicFluidContainerModel.Colors(), ModItems.FORMALDEHYDE_BUCKET.get());
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
@@ -37,6 +38,8 @@ public class ExampleModClient {
             ItemBlockRenderTypes.setRenderLayer(ModFluids.METHANOL_FLOWING.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.WOOD_TAR_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.WOOD_TAR_FLOWING.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FORMALDEHYDE_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FORMALDEHYDE_FLOWING.get(), RenderType.translucent());
         });
     }
 
@@ -74,5 +77,23 @@ public class ExampleModClient {
                 return 0xFFFFFFFF;
             }
         }, ModFluidTypes.WOOD_TAR_TYPE.get());
+
+        // Formaldehyde reuses the Methanol still/flow textures
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public ResourceLocation getStillTexture() {
+                return ModFluidTypes.METHANOL_STILL_RL;
+            }
+
+            @Override
+            public ResourceLocation getFlowingTexture() {
+                return ModFluidTypes.METHANOL_FLOWING_RL;
+            }
+
+            @Override
+            public int getTintColor() {
+                return 0xFFFFFFFF;
+            }
+        }, ModFluidTypes.FORMALDEHYDE_TYPE.get());
     }
 }

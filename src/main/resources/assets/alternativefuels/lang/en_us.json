@@ -2,5 +2,8 @@
   "fluid.alternativefuels.methanol": "Methanol",
   "item.alternativefuels.methanol_bucket": "Methanol Bucket",
   "fluid.alternativefuels.wood_tar": "Wood Tar",
-  "item.alternativefuels.wood_tar_bucket": "Wood Tar Bucket"
+  "item.alternativefuels.wood_tar_bucket": "Wood Tar Bucket",
+  "fluid.alternativefuels.formaldehyde": "Formaldehyde",
+  "item.alternativefuels.formaldehyde_bucket": "Formaldehyde Bucket",
+  "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Fuels"
 }

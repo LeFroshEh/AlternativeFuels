@@ -56,4 +56,21 @@ public class ModFluidTypes {
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
             ));
+
+    // Formaldehyde reuses the Methanol textures (block/methanol_still, block/methanol_flow)
+    public static final DeferredHolder<FluidType, FluidType> FORMALDEHYDE_TYPE = FLUID_TYPES.register("formaldehyde",
+            () -> new FluidType(FluidType.Properties.create()
+                    .descriptionId("fluid.alternativefuels.formaldehyde")
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .canExtinguish(false)
+                    .canConvertToSource(false)
+                    .supportsBoating(true)
+                    .density(815)
+                    .viscosity(650)
+                    .lightLevel(0)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+            ));
 }
