@@ -1,0 +1,9 @@
+{
+  "fluid.alternativefuels.methanol": "Méthanol",
+  "item.alternativefuels.methanol_bucket": "Seau de méthanol",
+  "fluid.alternativefuels.wood_tar": "Goudron de bois",
+  "item.alternativefuels.wood_tar_bucket": "Seau de goudron en bois",
+  "fluid.alternativefuels.formaldehyde": "Formaldéhyde",
+  "item.alternativefuels.formaldehyde_bucket": "Seau de formaldéhyde",
+  "creativetab.alternativefuels.alternative_fuels_tab": "Carburants Alternatifs"
+}
