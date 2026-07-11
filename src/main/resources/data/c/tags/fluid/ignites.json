@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "alternativefuels:methanol",
+    "alternativefuels:methanol_flowing",
+    "alternativefuels:wood_tar",
+    "alternativefuels:wood_tar_flowing",
+    "alternativefuels:formaldehyde",
+    "alternativefuels:formaldehyde_flowing"
+  ]
+}

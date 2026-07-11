@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "alternativefuels:methanol",
+    "alternativefuels:methanol_flowing"
+  ]
+}
