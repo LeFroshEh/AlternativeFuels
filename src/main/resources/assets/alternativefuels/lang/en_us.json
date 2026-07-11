@@ -1,4 +1,6 @@
 {
   "fluid.alternativefuels.methanol": "Methanol",
-  "item.alternativefuels.methanol_bucket": "Methanol Bucket"
+  "item.alternativefuels.methanol_bucket": "Methanol Bucket",
+  "fluid.alternativefuels.wood_tar": "Wood Tar",
+  "item.alternativefuels.wood_tar_bucket": "Wood Tar Bucket"
 }

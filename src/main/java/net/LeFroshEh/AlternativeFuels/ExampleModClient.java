@@ -28,12 +28,15 @@ public class ExampleModClient {
 
     private void registerItemColors(RegisterColorHandlersEvent.Item event) {
         event.register(new DynamicFluidContainerModel.Colors(), ModItems.METHANOL_BUCKET.get());
+        event.register(new DynamicFluidContainerModel.Colors(), ModItems.WOOD_TAR_BUCKET.get());
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(ModFluids.METHANOL_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.METHANOL_FLOWING.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.WOOD_TAR_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.WOOD_TAR_FLOWING.get(), RenderType.translucent());
         });
     }
 
@@ -54,5 +57,22 @@ public class ExampleModClient {
                 return 0xFFFFFFFF;
             }
         }, ModFluidTypes.METHANOL_TYPE.get());
+
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public ResourceLocation getStillTexture() {
+                return ModFluidTypes.WOOD_TAR_STILL_RL;
+            }
+
+            @Override
+            public ResourceLocation getFlowingTexture() {
+                return ModFluidTypes.WOOD_TAR_FLOWING_RL;
+            }
+
+            @Override
+            public int getTintColor() {
+                return 0xFFFFFFFF;
+            }
+        }, ModFluidTypes.WOOD_TAR_TYPE.get());
     }
 }

@@ -27,4 +27,16 @@ public class ModBlocks {
                             .liquid()
                             .sound(SoundType.EMPTY)
                             .noLootTable()));
+
+    public static final DeferredBlock<LiquidBlock> WOOD_TAR_BLOCK = BLOCKS.register("wood_tar",
+            () -> new LiquidBlock(ModFluids.WOOD_TAR_SOURCE.get(),
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_BLACK)
+                            .replaceable()
+                            .noCollission()
+                            .strength(100.0F)
+                            .pushReaction(PushReaction.DESTROY)
+                            .liquid()
+                            .sound(SoundType.EMPTY)
+                            .noLootTable()));
 }

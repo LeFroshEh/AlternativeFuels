@@ -18,4 +18,10 @@ public class ModItems {
                     new Item.Properties()
                             .craftRemainder(Items.BUCKET)
                             .stacksTo(1)));
+
+    public static final DeferredItem<BucketItem> WOOD_TAR_BUCKET = ITEMS.register("wood_tar_bucket",
+            () -> new BucketItem(ModFluids.WOOD_TAR_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)));
 }

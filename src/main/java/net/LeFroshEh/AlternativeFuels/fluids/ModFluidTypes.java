@@ -34,4 +34,26 @@ public class ModFluidTypes {
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
             ));
+
+    // Texture locations, referenced by ExampleModClient for rendering
+    public static final ResourceLocation WOOD_TAR_STILL_RL =
+            ResourceLocation.fromNamespaceAndPath(AlternativeFuels.MOD_ID, "block/wood_tar_still");
+    public static final ResourceLocation WOOD_TAR_FLOWING_RL =
+            ResourceLocation.fromNamespaceAndPath(AlternativeFuels.MOD_ID, "block/wood_tar_flow");
+
+    public static final DeferredHolder<FluidType, FluidType> WOOD_TAR_TYPE = FLUID_TYPES.register("wood_tar",
+            () -> new FluidType(FluidType.Properties.create()
+                    .descriptionId("fluid.alternativefuels.wood_tar")
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .canExtinguish(false)
+                    .canConvertToSource(false)
+                    .supportsBoating(false)
+                    .density(1200)
+                    .viscosity(1800)
+                    .lightLevel(0)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+            ));
 }

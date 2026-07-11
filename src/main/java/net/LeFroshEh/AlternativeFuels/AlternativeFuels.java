@@ -57,6 +57,7 @@ public class AlternativeFuels {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.METHANOL_BUCKET);
+            event.accept(ModItems.WOOD_TAR_BUCKET);
         }
     }
 
