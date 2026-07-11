@@ -1,9 +1,9 @@
 {
   "fluid.alternativefuels.methanol": "Methanol",
-  "item.alternativefuels.methanol_bucket": "Methanol Chübu",
+  "item.alternativefuels.methanol_bucket": "Methanolchübul",
   "fluid.alternativefuels.wood_tar": "Hölzteer",
-  "item.alternativefuels.wood_tar_bucket": "Hölzteer Chübu",
+  "item.alternativefuels.wood_tar_bucket": "Hölzteerchübul",
   "fluid.alternativefuels.formaldehyde": "Formaldehyd",
-  "item.alternativefuels.formaldehyde_bucket": "Formaldehyd Chübu",
+  "item.alternativefuels.formaldehyde_bucket": "Formaldehydchübul",
   "creativetab.alternativefuels.alternative_fuels_tab": "Alternativi Treibstoff"
 }
