@@ -1,9 +1,9 @@
 {
   "fluid.alternativefuels.methanol": "Metanol",
-  "item.alternativefuels.methanol_bucket": "Metanol Hink",
+  "item.alternativefuels.methanol_bucket": "Metanolhink",
   "fluid.alternativefuels.wood_tar": "Trätjära",
-  "item.alternativefuels.wood_tar_bucket": "Trätjär Hink",
+  "item.alternativefuels.wood_tar_bucket": "Trätjärhink",
   "fluid.alternativefuels.formaldehyde": "Formaldehyd",
-  "item.alternativefuels.formaldehyde_bucket": "Formaldehyd Hink",
+  "item.alternativefuels.formaldehyde_bucket": "Formaldehydhink",
   "creativetab.alternativefuels.alternative_fuels_tab": "Alternativa Bränslen"
 }
