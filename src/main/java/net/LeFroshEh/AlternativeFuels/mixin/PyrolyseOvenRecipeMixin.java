@@ -1,4 +1,3 @@
-
 package net.LeFroshEh.AlternativeFuels.mixin;
 
 import blusunrize.immersiveengineering.api.crafting.CokeOvenRecipe;
