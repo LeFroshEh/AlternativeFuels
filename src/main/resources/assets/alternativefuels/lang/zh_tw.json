@@ -5,5 +5,7 @@
   "item.alternativefuels.wood_tar_bucket": "木焦油桶",
   "fluid.alternativefuels.formaldehyde": "甲醛",
   "item.alternativefuels.formaldehyde_bucket": "甲醛桶",
+  "fluid.alternativefuels.bio_oil": "生物油",
+  "item.alternativefuels.bio_oil_bucket": "生物油桶",
   "creativetab.alternativefuels.alternative_fuels_tab": "替代燃料"
 }

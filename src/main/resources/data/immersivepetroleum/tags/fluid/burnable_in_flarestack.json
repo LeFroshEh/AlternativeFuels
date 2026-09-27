@@ -6,6 +6,8 @@
     "alternativefuels:wood_tar",
     "alternativefuels:wood_tar_flowing",
     "alternativefuels:formaldehyde",
-    "alternativefuels:formaldehyde_flowing"
+    "alternativefuels:formaldehyde_flowing",
+    "alternativefuels:bio_oil",
+    "alternativefuels:bio_oil_flowing"
   ]
 }

@@ -30,7 +30,7 @@ public class PyrolyseOvenRecipeMixin {
                         recipe.output,
                         List.of(),
                         new FluidStack(
-                                ModFluids.WOOD_TAR_SOURCE.get(),
+                                ModFluids.BIO_OIL_SOURCE.get(),
                                 recipe.creosoteOutput
                         ),
                         recipe.time / 4,

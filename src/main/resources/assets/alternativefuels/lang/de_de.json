@@ -5,5 +5,7 @@
   "item.alternativefuels.wood_tar_bucket": "Holzteereimer",
   "fluid.alternativefuels.formaldehyde": "Formaldehyd",
   "item.alternativefuels.formaldehyde_bucket": "Formaldehydeimer",
+  "fluid.alternativefuels.bio_oil": "Bioöl",
+  "item.alternativefuels.bio_oil_bucket": "Bioöleimer",
   "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Treibstoffe"
 }

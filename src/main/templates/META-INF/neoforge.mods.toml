@@ -80,7 +80,12 @@ Example mod description.
     side="BOTH"
 
 # Here's another dependency
-
+[[dependencies.alternativefuels]]
+modId="immersivepetroleum"
+type="required"
+versionRange="[4.5.0-39,)"
+ordering="AFTER"
+side="BOTH"
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't

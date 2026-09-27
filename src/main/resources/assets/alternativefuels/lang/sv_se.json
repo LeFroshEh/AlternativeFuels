@@ -5,5 +5,7 @@
   "item.alternativefuels.wood_tar_bucket": "Trätjärhink",
   "fluid.alternativefuels.formaldehyde": "Formaldehyd",
   "item.alternativefuels.formaldehyde_bucket": "Formaldehydhink",
+  "fluid.alternativefuels.bio_oil": "Bioolja",
+  "item.alternativefuels.bio_oil_bucket": "Biooljehink",
   "creativetab.alternativefuels.alternative_fuels_tab": "Alternativa Bränslen"
 }

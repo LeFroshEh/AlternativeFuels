@@ -73,4 +73,25 @@ public class ModFluidTypes {
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
             ));
+
+    public static final ResourceLocation BIO_OIL_STILL_RL =
+            ResourceLocation.fromNamespaceAndPath(AlternativeFuels.MOD_ID, "block/bio_oil_still");
+    public static final ResourceLocation BIO_OIL_FLOWING_RL =
+            ResourceLocation.fromNamespaceAndPath(AlternativeFuels.MOD_ID, "block/bio_oil_flow");
+
+    public static final DeferredHolder<FluidType, FluidType> BIO_OIL_TYPE = FLUID_TYPES.register("bio_oil",
+            () -> new FluidType(FluidType.Properties.create()
+                    .descriptionId("fluid.alternativefuels.bio_oil")
+                    .canSwim(false)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .canExtinguish(false)
+                    .canConvertToSource(false)
+                    .supportsBoating(false)
+                    .density(1100)
+                    .viscosity(1400)
+                    .lightLevel(0)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+            ));
 }

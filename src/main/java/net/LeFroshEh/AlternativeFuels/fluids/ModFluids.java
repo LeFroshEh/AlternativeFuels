@@ -32,6 +32,12 @@ public class ModFluids {
     public static final DeferredHolder<Fluid, FlowingFluid> FORMALDEHYDE_FLOWING = FLUIDS.register("formaldehyde_flowing",
             () -> new BaseFlowingFluid.Flowing(formaldehydeProperties()));
 
+    public static final DeferredHolder<Fluid, FlowingFluid> BIO_OIL_SOURCE = FLUIDS.register("bio_oil",
+            () -> new BaseFlowingFluid.Source(bioOilProperties()));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> BIO_OIL_FLOWING = FLUIDS.register("bio_oil_flowing",
+            () -> new BaseFlowingFluid.Flowing(bioOilProperties()));
+
     private static BaseFlowingFluid.Properties methanolProperties() {
         return new BaseFlowingFluid.Properties(
                 ModFluidTypes.METHANOL_TYPE,
@@ -63,5 +69,16 @@ public class ModFluids {
                 .levelDecreasePerBlock(2)
                 .block(() -> ModBlocks.FORMALDEHYDE_BLOCK.get())
                 .bucket(() -> ModItems.FORMALDEHYDE_BUCKET.get());
+    }
+
+    private static BaseFlowingFluid.Properties bioOilProperties() {
+        return new BaseFlowingFluid.Properties(
+                ModFluidTypes.BIO_OIL_TYPE,
+                BIO_OIL_SOURCE,
+                BIO_OIL_FLOWING)
+                .slopeFindDistance(2)
+                .levelDecreasePerBlock(2)
+                .block(() -> ModBlocks.BIO_OIL_BLOCK.get())
+                .bucket(() -> ModItems.BIO_OIL_BUCKET.get());
     }
 }

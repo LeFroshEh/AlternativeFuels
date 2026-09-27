@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "alternativefuels:bio_oil",
+    "alternativefuels:bio_oil_flowing"
+  ]
+}

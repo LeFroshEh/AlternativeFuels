@@ -5,5 +5,7 @@
   "item.alternativefuels.wood_tar_bucket": "Seau de goudron de bois",
   "fluid.alternativefuels.formaldehyde": "Formaldéhyde",
   "item.alternativefuels.formaldehyde_bucket": "Seau de formaldéhyde",
+  "fluid.alternativefuels.bio_oil": "Bio-huile",
+  "item.alternativefuels.bio_oil_bucket": "Seau de bio-huile",
   "creativetab.alternativefuels.alternative_fuels_tab": "Carburants Alternatifs"
 }

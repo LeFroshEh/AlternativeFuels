@@ -30,4 +30,10 @@ public class ModItems {
                     new Item.Properties()
                             .craftRemainder(Items.BUCKET)
                             .stacksTo(1)));
+
+    public static final DeferredItem<BucketItem> BIO_OIL_BUCKET = ITEMS.register("bio_oil_bucket",
+            () -> new BucketItem(ModFluids.BIO_OIL_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)));
 }

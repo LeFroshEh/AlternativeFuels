@@ -5,5 +5,7 @@
   "item.alternativefuels.wood_tar_bucket": "Wood Tar Bucket",
   "fluid.alternativefuels.formaldehyde": "Formaldehyde",
   "item.alternativefuels.formaldehyde_bucket": "Formaldehyde Bucket",
+  "fluid.alternativefuels.bio_oil": "Bio-oil",
+  "item.alternativefuels.bio_oil_bucket": "Bio-oil Bucket",
   "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Fuels"
 }

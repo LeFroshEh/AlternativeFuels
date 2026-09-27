@@ -51,4 +51,16 @@ public class ModBlocks {
                             .liquid()
                             .sound(SoundType.EMPTY)
                             .noLootTable()));
+
+    public static final DeferredBlock<LiquidBlock> BIO_OIL_BLOCK = BLOCKS.register("bio_oil",
+            () -> new LiquidBlock(ModFluids.BIO_OIL_SOURCE.get(),
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_BROWN)
+                            .replaceable()
+                            .noCollission()
+                            .strength(100.0F)
+                            .pushReaction(PushReaction.DESTROY)
+                            .liquid()
+                            .sound(SoundType.EMPTY)
+                            .noLootTable()));
 }

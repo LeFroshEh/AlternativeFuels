@@ -5,5 +5,7 @@
   "item.alternativefuels.wood_tar_bucket": "Hölzteerchübul",
   "fluid.alternativefuels.formaldehyde": "Formaldehyd",
   "item.alternativefuels.formaldehyde_bucket": "Formaldehydchübul",
+  "fluid.alternativefuels.bio_oil": "Bio-Öl",
+  "item.alternativefuels.bio_oil_bucket": "Bio-Ölchübul",
   "creativetab.alternativefuels.alternative_fuels_tab": "Alternativi Treibstoff"
 }
