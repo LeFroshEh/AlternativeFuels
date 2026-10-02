@@ -13,4 +13,7 @@ In the <link;refinery;Refinery>, Methanol can be combined with Plant Oil to prod
 It can also be converted into <link;af_bio_oil;Formaldehyde;formaldehyde> using a Silver Plate catalyst.<np>
 <&formaldehyde>§lFormaldehyde§r is produced by the catalytic oxidation of Methanol.<br>
 It is a reactive industrial chemical and is used as a precursor to Phenolic Resin.<br>
-In the <link;refinery;Refinery>, Formaldehyde can be combined with Creosote Oil to produce Phenolic Resin.
+In the <link;refinery;Refinery>, Formaldehyde can be combined with Creosote Oil to produce Phenolic Resin.<np>
+<&e5_gasoline>§lE5 Gasoline§r is a motor fuel made of gasoline blended with a small share of ethanol.<br>
+It is highly flammable and is used much like regular gasoline.<br>
+Spilled E5 Gasoline can be ignited, and it can be burned off in the Flarestack.

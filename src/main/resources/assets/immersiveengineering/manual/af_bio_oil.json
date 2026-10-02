@@ -30,5 +30,13 @@
         "id": "alternativefuels:formaldehyde_bucket"
       }
     ]
+  },
+  "e5_gasoline": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "alternativefuels:e5_gasoline_bucket"
+      }
+    ]
   }
 }
