@@ -4,7 +4,12 @@
   "package": "net.LeFroshEh.AlternativeFuels.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "PyrolyseOvenRecipeMixin"
+    "PyrolyseOvenRecipeMixin",
+    "MixerLogicMixin",
+    "MixerRecipeFindRecipeMixin",
+    "MixingProcessMixin",
+    "GasGeneratorE5Mixin",
+    "FuelHandlerE5Mixin"
   ],
   "injectors": {
     "defaultRequire": 1

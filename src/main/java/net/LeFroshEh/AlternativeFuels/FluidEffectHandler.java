@@ -36,6 +36,12 @@ public class FluidEffectHandler {
                     player.isInFluidType(ModFluids.BIO_OIL_SOURCE.get().getFluidType())) {
                 player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1, false, true));
             }
+
+            // 4. E5 GASOLINE: Nausea + Weakness I (10 seconds = 200 ticks)
+            if (player.isInFluidType(ModFluids.E5_GASOLINE_SOURCE.get().getFluidType())) {
+                player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 0, false, true));
+                player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 0, false, true));
+            }
         }
     }
 }

@@ -22,6 +22,7 @@ public class AlternativeFuels {
         ModFluids.FLUIDS.register(modEventBus);
         ModFluidTypes.FLUID_TYPES.register(modEventBus);
         ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        ModRecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
 
         // Register lifecycle listener
         modEventBus.addListener(this::commonSetup);

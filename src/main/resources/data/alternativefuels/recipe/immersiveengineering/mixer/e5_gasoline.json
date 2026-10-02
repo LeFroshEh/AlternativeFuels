@@ -1,18 +1,15 @@
 {
-  "type": "immersiveengineering:mixer",
+  "type": "alternativefuels:two_fluid_mixer",
   "energy": 640,
   "fluid": {
     "amount": 95,
-    "id": "c:gasoline"
+    "tag": "c:gasoline"
   },
-  "inputs": [
-    {
-      "fluid": {
-        "amount": 5,
-        "id": "c:ethanol"
-      }
-    }
-  ],
+  "fluid2": {
+    "amount": 5,
+    "tag": "c:ethanol"
+  },
+  "inputs": [],
   "result": {
     "amount": 100,
     "id": "alternativefuels:e5_gasoline"
