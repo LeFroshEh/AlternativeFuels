@@ -15,5 +15,5 @@ It can also be converted into <link;af_bio_oil;Formaldehyde;formaldehyde> using 
 It is a reactive industrial chemical and is used as a precursor to Phenolic Resin.<br>
 In the <link;refinery;Refinery>, Formaldehyde can be combined with Creosote Oil to produce Phenolic Resin.<np>
 <&e5_gasoline>§lE5 Gasoline§r is a motor fuel made of <link;immersivepetroleum:fluids;Gasoline;gasoline> blended with a small share of <link;industrial_fluids;Ethanol;plant_oil_ethanol>. <br>
-It is mixed in the <link;mixer;Mixer> from 95 mB of Gasoline and 5 mB of Ethanol, with no other ingredients.<br>
+It is mixed in the <link;mixer;Mixer> from 95 mB of Gasoline and 5 mB of Ethanol.<br>
 It is highly flammable and is used much like regular gasoline. Spilled E5 Gasoline can be burned off in the Flarestack.
