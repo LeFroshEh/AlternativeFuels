@@ -31,6 +31,7 @@ public class ExampleModClient {
         event.register(new DynamicFluidContainerModel.Colors(), ModItems.WOOD_TAR_BUCKET.get());
         event.register(new DynamicFluidContainerModel.Colors(), ModItems.FORMALDEHYDE_BUCKET.get());
         event.register(new DynamicFluidContainerModel.Colors(), ModItems.BIO_OIL_BUCKET.get());
+        event.register(new DynamicFluidContainerModel.Colors(), ModItems.E5_GASOLINE_BUCKET.get());
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
@@ -43,6 +44,8 @@ public class ExampleModClient {
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FORMALDEHYDE_FLOWING.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.BIO_OIL_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.BIO_OIL_FLOWING.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.E5_GASOLINE_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.E5_GASOLINE_FLOWING.get(), RenderType.translucent());
         });
     }
 
@@ -115,5 +118,22 @@ public class ExampleModClient {
                 return 0xFFCCCCCC;
             }
         }, ModFluidTypes.BIO_OIL_TYPE.get());
+
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public ResourceLocation getStillTexture() {
+                return ModFluidTypes.E5_GASOLINE_STILL_RL;
+            }
+
+            @Override
+            public ResourceLocation getFlowingTexture() {
+                return ModFluidTypes.E5_GASOLINE_FLOWING_RL;
+            }
+
+            @Override
+            public int getTintColor() {
+                return 0xFFFFFFFF;
+            }
+        }, ModFluidTypes.E5_GASOLINE_TYPE.get());
     }
 }

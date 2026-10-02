@@ -36,4 +36,10 @@ public class ModItems {
                     new Item.Properties()
                             .craftRemainder(Items.BUCKET)
                             .stacksTo(1)));
+
+    public static final DeferredItem<BucketItem> E5_GASOLINE_BUCKET = ITEMS.register("e5_gasoline_bucket",
+            () -> new BucketItem(ModFluids.E5_GASOLINE_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)));
 }

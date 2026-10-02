@@ -7,5 +7,8 @@
   "item.alternativefuels.formaldehyde_bucket": "Formaldehydeimer",
   "fluid.alternativefuels.bio_oil": "Bioöl",
   "item.alternativefuels.bio_oil_bucket": "Bioöleimer",
-  "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Treibstoffe"
+  "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Treibstoffe",
+  "manual.immersiveengineering.alternativefuels": "Alternative Treibstoffe",
+  "advancement.alternativefuels.bio_oil_bucket.title": "Bioöleimer",
+  "advancement.alternativefuels.bio_oil_bucket.description": "Der umweltfreundliche Weg"
 }

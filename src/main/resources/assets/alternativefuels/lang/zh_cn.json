@@ -7,5 +7,8 @@
   "item.alternativefuels.formaldehyde_bucket": "甲醛桶",
   "fluid.alternativefuels.bio_oil": "生物油",
   "item.alternativefuels.bio_oil_bucket": "生物油桶",
-  "creativetab.alternativefuels.alternative_fuels_tab": "替代燃料"
+  "creativetab.alternativefuels.alternative_fuels_tab": "替代燃料",
+  "manual.immersiveengineering.alternativefuels": "替代燃料",
+  "advancement.alternativefuels.bio_oil_bucket.title": "生物油桶",
+  "advancement.alternativefuels.bio_oil_bucket.description": "环保之道"
 }

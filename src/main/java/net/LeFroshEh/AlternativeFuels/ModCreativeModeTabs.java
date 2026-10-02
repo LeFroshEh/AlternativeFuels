@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.WOOD_TAR_BUCKET.get());
                         output.accept(ModItems.FORMALDEHYDE_BUCKET.get());
                         output.accept(ModItems.BIO_OIL_BUCKET.get());
+                        output.accept(ModItems.E5_GASOLINE_BUCKET.get());
                     })
                     .build());
 }

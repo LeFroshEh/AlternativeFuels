@@ -1,0 +1,22 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_tag",
+      "fluid_tag": "c:kerosene",
+      "amount": 100
+    }
+  ],
+  "heat_requirement": "superheated",
+  "processing_time": 40,
+  "results": [
+    {
+      "id": "immersivepetroleum:diesel_sulfur",
+      "amount": 75
+    },
+    {
+      "id": "immersivepetroleum:benzol",
+      "amount": 75
+    }
+  ]
+}

@@ -7,5 +7,10 @@
   "item.alternativefuels.formaldehyde_bucket": "Formaldehyde Bucket",
   "fluid.alternativefuels.bio_oil": "Bio-oil",
   "item.alternativefuels.bio_oil_bucket": "Bio-oil Bucket",
-  "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Fuels"
+  "fluid.alternativefuels.e5_gasoline": "E5 Gasoline",
+  "item.alternativefuels.e5_gasoline_bucket": "E5 Gasoline Bucket",
+  "creativetab.alternativefuels.alternative_fuels_tab": "Alternative Fuels",
+  "manual.immersiveengineering.alternativefuels": "Alternative Fuels",
+  "advancement.alternativefuels.bio_oil_bucket.title": "Bio-oil Bucket",
+  "advancement.alternativefuels.bio_oil_bucket.description": "The Environmental Way"
 }

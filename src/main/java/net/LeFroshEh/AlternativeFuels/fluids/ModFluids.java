@@ -38,6 +38,12 @@ public class ModFluids {
     public static final DeferredHolder<Fluid, FlowingFluid> BIO_OIL_FLOWING = FLUIDS.register("bio_oil_flowing",
             () -> new BaseFlowingFluid.Flowing(bioOilProperties()));
 
+    public static final DeferredHolder<Fluid, FlowingFluid> E5_GASOLINE_SOURCE = FLUIDS.register("e5_gasoline",
+            () -> new BaseFlowingFluid.Source(e5GasolineProperties()));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> E5_GASOLINE_FLOWING = FLUIDS.register("e5_gasoline_flowing",
+            () -> new BaseFlowingFluid.Flowing(e5GasolineProperties()));
+
     private static BaseFlowingFluid.Properties methanolProperties() {
         return new BaseFlowingFluid.Properties(
                 ModFluidTypes.METHANOL_TYPE,
@@ -80,5 +86,16 @@ public class ModFluids {
                 .levelDecreasePerBlock(2)
                 .block(() -> ModBlocks.BIO_OIL_BLOCK.get())
                 .bucket(() -> ModItems.BIO_OIL_BUCKET.get());
+    }
+
+    private static BaseFlowingFluid.Properties e5GasolineProperties() {
+        return new BaseFlowingFluid.Properties(
+                ModFluidTypes.E5_GASOLINE_TYPE,
+                E5_GASOLINE_SOURCE,
+                E5_GASOLINE_FLOWING)
+                .slopeFindDistance(2)
+                .levelDecreasePerBlock(2)
+                .block(() -> ModBlocks.E5_GASOLINE_BLOCK.get())
+                .bucket(() -> ModItems.E5_GASOLINE_BUCKET.get());
     }
 }

@@ -94,4 +94,25 @@ public class ModFluidTypes {
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
             ));
+
+    public static final ResourceLocation E5_GASOLINE_STILL_RL =
+            ResourceLocation.fromNamespaceAndPath(AlternativeFuels.MOD_ID, "block/e5_gasoline_still");
+    public static final ResourceLocation E5_GASOLINE_FLOWING_RL =
+            ResourceLocation.fromNamespaceAndPath(AlternativeFuels.MOD_ID, "block/e5_gasoline_flow");
+
+    public static final DeferredHolder<FluidType, FluidType> E5_GASOLINE_TYPE = FLUID_TYPES.register("e5_gasoline",
+            () -> new FluidType(FluidType.Properties.create()
+                    .descriptionId("fluid.alternativefuels.e5_gasoline")
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canPushEntity(true)
+                    .canExtinguish(false)
+                    .canConvertToSource(false)
+                    .supportsBoating(true)
+                    .density(755)
+                    .viscosity(700)
+                    .lightLevel(0)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+            ));
 }

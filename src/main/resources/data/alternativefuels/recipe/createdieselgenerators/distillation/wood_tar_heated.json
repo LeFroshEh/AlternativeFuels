@@ -1,0 +1,34 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_tag",
+      "fluid_tag": "c:wood_tar",
+      "amount": 100
+    }
+  ],
+  "heat_requirement": "heated",
+  "processing_time": 60,
+  "results": [
+    {
+      "id": "immersiveengineering:creosote",
+      "amount": 40
+    },
+    {
+      "id": "minecraft:water",
+      "amount": 20
+    },
+    {
+      "id": "immersivepetroleum:benzol",
+      "amount": 6
+    },
+    {
+      "id": "immersivepetroleum:naphtha",
+      "amount": 8
+    },
+    {
+      "id": "alternativefuels:methanol",
+      "amount": 4
+    }
+  ]
+}

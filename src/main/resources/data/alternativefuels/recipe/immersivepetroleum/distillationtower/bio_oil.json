@@ -1,0 +1,23 @@
+{
+  "type": "immersivepetroleum:distillation",
+  "input": {
+    "amount": 400,
+    "fluid": "alternativefuels:bio_oil"
+  },
+  "results": [
+    {
+      "amount": 50,
+      "id": "alternativefuels:methanol"
+    },
+    {
+      "amount": 200,
+      "id": "minecraft:water"
+    },
+    {
+      "amount": 150,
+      "id": "alternativefuels:wood_tar"
+    }
+  ],
+  "energy": 1024,
+  "time": 2
+}

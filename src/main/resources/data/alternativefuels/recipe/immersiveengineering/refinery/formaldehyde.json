@@ -1,0 +1,15 @@
+{
+  "type": "immersiveengineering:refinery",
+  "input0": {
+    "amount": 50,
+    "fluid": "alternativefuels:methanol"
+  },
+  "catalyst": {
+    "tag": "c:plates/silver"
+  },
+  "result": {
+    "amount": 50,
+    "id": "alternativefuels:formaldehyde"
+  },
+  "energy": 120
+}

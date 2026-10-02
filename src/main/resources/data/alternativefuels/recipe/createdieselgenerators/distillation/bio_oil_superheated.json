@@ -1,0 +1,26 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_tag",
+      "fluid_tag": "c:bio_oil",
+      "amount": 100
+    }
+  ],
+  "heat_requirement": "superheated",
+  "processing_time": 40,
+  "results": [
+    {
+      "id": "alternativefuels:wood_tar",
+      "amount": 48
+    },
+    {
+      "id": "minecraft:water",
+      "amount": 62
+    },
+    {
+      "id": "alternativefuels:methanol",
+      "amount": 16
+    }
+  ]
+}

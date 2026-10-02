@@ -7,5 +7,8 @@
   "item.alternativefuels.formaldehyde_bucket": "Formaldehydhink",
   "fluid.alternativefuels.bio_oil": "Bioolja",
   "item.alternativefuels.bio_oil_bucket": "Biooljehink",
-  "creativetab.alternativefuels.alternative_fuels_tab": "Alternativa Bränslen"
+  "creativetab.alternativefuels.alternative_fuels_tab": "Alternativa Bränslen",
+  "manual.immersiveengineering.alternativefuels": "Alternativa Bränslen",
+  "advancement.alternativefuels.bio_oil_bucket.title": "Biooljehink",
+  "advancement.alternativefuels.bio_oil_bucket.description": "Det miljövänliga sättet"
 }

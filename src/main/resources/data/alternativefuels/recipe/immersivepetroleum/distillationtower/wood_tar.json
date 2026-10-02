@@ -1,0 +1,31 @@
+{
+  "type": "immersivepetroleum:distillation",
+  "input": {
+    "amount": 100,
+    "fluid": "alternativefuels:wood_tar"
+  },
+  "results": [
+    {
+      "amount": 4,
+      "id": "alternativefuels:methanol"
+    },
+    {
+      "amount": 8,
+      "id": "immersivepetroleum:naphtha"
+    },
+    {
+      "amount": 6,
+      "id": "immersivepetroleum:benzol"
+    },
+    {
+      "amount": 20,
+      "id": "minecraft:water"
+    },
+    {
+      "amount": 40,
+      "id": "immersiveengineering:creosote"
+    }
+  ],
+  "energy": 1024,
+  "time": 1
+}

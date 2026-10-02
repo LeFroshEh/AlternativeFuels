@@ -1,0 +1,16 @@
+Bio-oil & Alternative Fuels
+Pyrolysis Products
+<&bio_oil>§lBio-oil§r is a dark, energy-rich fluid produced by the pyrolysis of biomass in the Pyrolyse Oven.<br>
+It is a complex mixture of organic compounds and can be further processed to recover useful chemical products.<br>
+When distilling Bio-oil in the <link;immersivepetroleum:distillationtower;Distillation Tower>, it produces <link;af_bio_oil;Wood Tar;wood_tar>, <link;af_bio_oil;Methanol;methanol>, and water.<np>
+<&wood_tar>§lWood Tar§r is a thick, viscous product of biomass pyrolysis.<br>
+It contains a variety of organic compounds which can be recovered through further distillation.<br>
+Distilling Wood Tar in the <link;immersivepetroleum:distillationtower;Distillation Tower> produces <link;industrial_fluids;Creosote Oil;creosote_oil>, <link;immersivepetroleum:fluids;Benzol;benzol>, <link;immersivepetroleum:fluids;Naphtha;naphtha>, and water.
+<np>
+<&methanol>§lMethanol§r is a simple alcohol recovered from the distillation of biomass-derived fluids.<br>
+It is highly flammable and can be used as an industrial feedstock.<br>
+In the <link;refinery;Refinery>, Methanol can be combined with Plant Oil to produce <link;industrial_fluids;Biodiesel;biodiesel>.<br>
+It can also be converted into <link;af_bio_oil;Formaldehyde;formaldehyde> using a Silver Plate catalyst.<np>
+<&formaldehyde>§lFormaldehyde§r is produced by the catalytic oxidation of Methanol.<br>
+It is a reactive industrial chemical and is used as a precursor to Phenolic Resin.<br>
+In the <link;refinery;Refinery>, Formaldehyde can be combined with Creosote Oil to produce Phenolic Resin.

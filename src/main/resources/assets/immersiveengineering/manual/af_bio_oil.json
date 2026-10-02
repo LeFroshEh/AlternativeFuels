@@ -1,0 +1,34 @@
+{
+  "bio_oil": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "alternativefuels:bio_oil_bucket"
+      }
+    ]
+  },
+  "wood_tar": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "alternativefuels:wood_tar_bucket"
+      }
+    ]
+  },
+  "methanol": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "alternativefuels:methanol_bucket"
+      }
+    ]
+  },
+  "formaldehyde": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "alternativefuels:formaldehyde_bucket"
+      }
+    ]
+  }
+}
