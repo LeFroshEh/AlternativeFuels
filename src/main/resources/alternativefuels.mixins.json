@@ -11,6 +11,9 @@
     "GasGeneratorE5Mixin",
     "FuelHandlerE5Mixin"
   ],
+  "client": [
+    "MixerRecipeCategoryMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
