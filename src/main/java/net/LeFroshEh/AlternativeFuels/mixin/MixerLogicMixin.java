@@ -46,13 +46,7 @@ public class MixerLogicMixin {
         TwoFluidMixerSupport.CURRENT_LEVEL.remove();
     }
 
-    /**
-     * IE's "output bottom fluid" sends out tank.getFluid(), which is the LAST fluid in the tank.
-     * Recipe products are appended last, so the finished E5 is normally what leaves.
-     * The only problem case is when no E5 is in the tank right now (e.g. the pipe emptied it faster
-     * than it was made): the last fluid is then an ingredient, and IE would pipe the gasoline or
-     * ethanol out. Vanilla IE only guards that for single-fluid recipes, so we guard it here.
-     */
+
     @Inject(method = "outputFluids", at = @At("HEAD"), cancellable = true)
     private void alternativefuels$holdBackIngredients(
             MixerLogic.State state,

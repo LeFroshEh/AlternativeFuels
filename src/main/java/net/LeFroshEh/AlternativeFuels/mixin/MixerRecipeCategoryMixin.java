@@ -18,10 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Arrays;
 
-/**
- * Makes IE's normal "Mixer" JEI tab show BOTH fluid inputs of a two-fluid recipe.
- * The single input tank is split into two side-by-side tanks. All other recipes are left alone.
- */
+
 @Mixin(value = MixerRecipeCategory.class, remap = false)
 public class MixerRecipeCategoryMixin {
     @Shadow private IDrawableStatic tankOverlay;

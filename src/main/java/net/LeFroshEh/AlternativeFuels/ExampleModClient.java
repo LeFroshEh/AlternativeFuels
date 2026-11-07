@@ -16,8 +16,7 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.model.DynamicFluidContainerModel;
 
-// This class is only loaded on the physical client.
-// You do not need to worry about it being called on a dedicated server.
+
 @Mod(value = AlternativeFuels.MOD_ID, dist = Dist.CLIENT)
 public class ExampleModClient {
     public ExampleModClient(IEventBus modEventBus) {

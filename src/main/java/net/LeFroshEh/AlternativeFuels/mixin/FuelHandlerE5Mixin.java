@@ -12,14 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-/**
- * Immersive Petroleum wipes and rebuilds its generator fuel list from its config every time that
- * config loads or reloads, so fuels registered once at startup disappear again. This re-adds E5
- * Gasoline right after each rebuild, so it works without anyone editing the config.
- *
- * E5 copies gasoline's current settings (mB per second and flux per tick), so it always matches
- * whatever the pack's config says for gasoline. If E5 is already listed in the config, that entry wins.
- */
+
 @Mixin(FuelHandler.class)
 public class FuelHandlerE5Mixin {
     @Inject(method = "onConfigReload", at = @At("RETURN"))

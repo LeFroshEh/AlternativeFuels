@@ -23,10 +23,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class MixingProcessMixin {
     @Shadow @Final private MultiFluidTank tank;
 
-    /**
-     * How much of the recipe output this process has produced so far.
-     * Rebuilt from processTick at the start of every tick, so it stays correct after a world reload.
-     */
+
     @Unique
     private int alternativefuels$produced = 0;
 
@@ -117,8 +114,7 @@ public class MixingProcessMixin {
             return FluidStack.EMPTY;
         }
 
-        // Cumulative accounting: after producing N of the output, exactly
-        // input1 * N / output and input2 * N / output must have been consumed.
+
         int producedBefore = this.alternativefuels$produced;
         int producedAfter = Math.min(outputAmount, producedBefore + originalAmount);
         int firstAmount = recipe.fluidInput.amount() * producedAfter / outputAmount

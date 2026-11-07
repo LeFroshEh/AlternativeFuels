@@ -14,13 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-/**
- * Makes E5 Gasoline burn 1.6% faster than the amount set in the Immersive Petroleum config,
- * while the power output (flux per tick) stays exactly as configured.
- *
- * The config only accepts whole mB, so the extra 0.016 is collected as a fraction on each burn
- * cycle and paid as an extra 1 mB whenever it adds up to a whole mB.
- */
+
 @Mixin(GasGeneratorTileEntity.class)
 public abstract class GasGeneratorE5Mixin {
     @Unique

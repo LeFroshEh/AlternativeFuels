@@ -25,12 +25,7 @@ public final class TwoFluidMixerSupport {
     public static final ThreadLocal<Level> CURRENT_LEVEL = new ThreadLocal<>();
     public static final ThreadLocal<ProcessInfo> CURRENT_PROCESS = new ThreadLocal<>();
 
-    /**
-     * IE calls this once for every fluid in the tank. We only answer for the first fluid that
-     * matches the recipe's first input, so exactly one process is queued per recipe per tick.
-     * The order of fluids in the tank does not matter (the old version required the LAST fluid in
-     * the tank to be an ingredient, which stopped new batches whenever E5 was in the tank).
-     */
+
     public static RecipeHolder<MixerRecipe> findRecipe(
             Level level,
             MultiFluidTank tank,
@@ -70,11 +65,7 @@ public final class TwoFluidMixerSupport {
         return null;
     }
 
-    /**
-     * True when the fluid that "output bottom fluid" would send out (the last one in the tank) is an
-     * ingredient of a two-fluid recipe whose other ingredient is also still in the tank, i.e. the
-     * mixer could still use it.
-     */
+
     public static boolean shouldHoldBackOutput(Level level, MultiFluidTank tank) {
         FluidStack last = tank.getFluid();
         if (last.isEmpty()) {
